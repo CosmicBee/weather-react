@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import WeatherSearch from './WeatherSearch';
 
 
 function App() {
   return (
     <div className="App">
+      <div className='container'>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Weather Search</h1>
+        <h1>Weather Time</h1>
+
+        <p> <WeatherSearch/></p>
+      
         <p>
-         <form>
-  <label>
-    
-    <input type="text" name="name" />
-  </label>
-  <input type="submit" value="Submit" />
-</form>
+        "Wherever you go, no matter what
+         the weather, <p>always bring your
+        own sunshine."</p>
+      
         </p>
+        <p>  Anthony J. D'Angelo</p>
+        
 
-
+ 
         
         <a
           className="App-link"
@@ -27,9 +31,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         Github Link
+         Github 
         </a>
       </header>
+    </div>
     </div>
   );
 }
